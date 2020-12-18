@@ -54,7 +54,9 @@
     }
 }
 .car{
-    width: 400px;
+    width: 800px;
     bottom: 100px;
-    left: 50%;
+    left: 30%;
+    position: absolute;
+    z-index: 2;
 }
