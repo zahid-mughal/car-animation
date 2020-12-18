@@ -5,8 +5,33 @@
 .main-back{
     width: 100%;
     height: 100vh;
-    background-image: url(sky.png);
+    background-image: url(sky.jpg);
     background-size: 100% 100%;
     background-position: center;
     overflow-x: hidden;
+    position: relative;
+}
+.highway{
+    height: 200px;
+    width: 500%;
+    background-image: url(h.webp);
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+    animation: high ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+
+
+}
+@keyframes high{
+    100%{ transform:translateX(-3400px);}
 }
