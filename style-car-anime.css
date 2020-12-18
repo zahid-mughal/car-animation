@@ -24,7 +24,7 @@
     display: block;
     background-size: 100% 100%;
     background-repeat: repeat-x;
-    /* background-size: cover; */
+    /* background-size: initial; */
     animation: high ;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -33,5 +33,28 @@
 
 }
 @keyframes high{
-    100%{ transform:translateX(-3400px);}
+    100%{ transform:translateX(-3400px);} */
+ }
+.city{
+    width: 500%;
+    height: 200px;
+    background-image: url(city3.png);
+    display: block;
+    bottom: 70px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+     background-repeat: repeat-x;
+    animation: city 20s  infinite linear; 
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car{
+    width: 400px;
+    bottom: 100px;
+    left: 50%;
 }
