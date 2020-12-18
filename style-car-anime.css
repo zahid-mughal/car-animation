@@ -32,9 +32,9 @@
 
 
 }
-@keyframes high{
+/* @keyframes high{
     100%{ transform:translateX(-3400px);} */
- }
+ } */
 .city{
     width: 500%;
     height: 200px;
@@ -48,15 +48,27 @@
      background-repeat: repeat-x;
     animation: city 20s  infinite linear; 
 }
-@keyframes city{
+/* @keyframes city{
     100%{
         transform: translateX(-1400px);
     }
-}
+} */
 .car{
-    width: 800px;
+    width: 400px;
     bottom: 100px;
-    left: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     z-index: 2;
 }
+.car img{
+width: 100%;
+animation: tank 2s infinite linear;
+}
+@keyframes tank{ 
+    100%{transform: translateY(-2px);}
+    50%{transform:translateY(1px) ;}
+    0%{transform: translateY(-3px);}
+
+}
+
