@@ -65,10 +65,17 @@
 width: 100%;
 animation: tank 2s infinite linear;
 }
-@keyframes tank{ 
+/* @keyframes tank{ 
     100%{transform: translateY(-2px);}
     50%{transform:translateY(1px) ;}
     0%{transform: translateY(-3px);}
-
+} */
+.wheel{ 
+    width: 800px;
+    position: absolute;
+    z-index: 3;
+    bottom: 112px;
+    left: 66%;
+    transform: translateX(-50%);
 }
 
